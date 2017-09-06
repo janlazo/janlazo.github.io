@@ -1,6 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Vue Demo</title>
+    <script src="https://unpkg.com/vue/dist/vue.min.js">
+    </script>
+  </head>
   <body>
-    <div>Hello World</div>
+    <div id="app">{{message}}</div>
+    <script>
+      (function () {
+        'use strict';
+        var app = new Vue({
+          el: '#app',
+          data: {
+            message: 'Hello World!'
+          }
+        });
+      })();
+    </script>
   </body>
 </html>
