@@ -9,15 +9,16 @@
   <body>
     <div id="app">{{message}}</div>
     <script>
-      (function () {
+      (function (window) {
         'use strict';
+        var Vue = window.Vue;
         var app = new Vue({
           el: '#app',
           data: {
             message: 'Hello World!'
           }
         });
-      })();
+      })(this);
     </script>
   </body>
 </html>
